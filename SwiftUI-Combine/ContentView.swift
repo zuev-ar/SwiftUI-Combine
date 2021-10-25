@@ -27,7 +27,7 @@ struct ContentView: View {
                 } label: {
                     Text("Sign up")
                 }
-                .disabled(self.userViewModel.isValid)
+                .disabled(!self.userViewModel.isValid)
             }
         }
         .sheet(isPresented: $presentAlert) {
