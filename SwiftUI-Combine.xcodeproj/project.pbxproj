@@ -11,6 +11,8 @@
 		D7D446F22727115000CD874D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D446F12727115000CD874D /* ContentView.swift */; };
 		D7D446F42727115300CD874D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D446F32727115300CD874D /* Assets.xcassets */; };
 		D7D446F72727115300CD874D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D446F62727115300CD874D /* Preview Assets.xcassets */; };
+		D7D446FE2727120000CD874D /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D446FD2727120000CD874D /* UserViewModel.swift */; };
+		D7D4470127271C8900CD874D /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = D7D4470027271C8900CD874D /* Navajo-Swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		D7D446F12727115000CD874D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D7D446F32727115300CD874D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7D446F62727115300CD874D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7D446FD2727120000CD874D /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D4470127271C8900CD874D /* Navajo-Swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				D7D446EF2727115000CD874D /* SwiftUI_CombineApp.swift */,
 				D7D446F12727115000CD874D /* ContentView.swift */,
+				D7D446FD2727120000CD874D /* UserViewModel.swift */,
 				D7D446F32727115300CD874D /* Assets.xcassets */,
 				D7D446F52727115300CD874D /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-Combine";
+			packageProductDependencies = (
+				D7D4470027271C8900CD874D /* Navajo-Swift */,
+			);
 			productName = "SwiftUI-Combine";
 			productReference = D7D446EC2727115000CD874D /* SwiftUI-Combine.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = D7D446E32727115000CD874D;
+			packageReferences = (
+				D7D446FF27271C8900CD874D /* XCRemoteSwiftPackageReference "Navajo-Swift" */,
+			);
 			productRefGroup = D7D446ED2727115000CD874D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D446F22727115000CD874D /* ContentView.swift in Sources */,
+				D7D446FE2727120000CD874D /* UserViewModel.swift in Sources */,
 				D7D446F02727115000CD874D /* SwiftUI_CombineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7D446FF27271C8900CD874D /* XCRemoteSwiftPackageReference "Navajo-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Wistas23/Navajo-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7D4470027271C8900CD874D /* Navajo-Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7D446FF27271C8900CD874D /* XCRemoteSwiftPackageReference "Navajo-Swift" */;
+			productName = "Navajo-Swift";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D7D446E42727115000CD874D /* Project object */;
 }
